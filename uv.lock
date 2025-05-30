@@ -366,6 +366,7 @@ name = "ia"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "m2cgen" },
     { name = "notebook" },
     { name = "pandas" },
     { name = "scikit-learn" },
@@ -374,6 +375,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
+    { name = "m2cgen", specifier = ">=0.10.0" },
     { name = "notebook", specifier = ">=7.4.1" },
     { name = "pandas", specifier = ">=2.2.3" },
     { name = "scikit-learn", specifier = ">=1.6.1" },
@@ -737,6 +739,18 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/05/f9/27e94c1b3eb29e6933b6986ffc5fa1177d2cd1f0c8efc5f02c91c9ac61de/kiwisolver-1.4.8-cp313-cp313t-musllinux_1_2_ppc64le.whl", hash = "sha256:151dffc4865e5fe6dafce5480fab84f950d14566c480c08a53c663a0020504b6", size = 2390661 },
     { url = "https://files.pythonhosted.org/packages/d9/d4/3c9735faa36ac591a4afcc2980d2691000506050b7a7e80bcfe44048daa7/kiwisolver-1.4.8-cp313-cp313t-musllinux_1_2_s390x.whl", hash = "sha256:577facaa411c10421314598b50413aa1ebcf5126f704f1e5d72d7e4e9f020d90", size = 2546710 },
     { url = "https://files.pythonhosted.org/packages/4c/fa/be89a49c640930180657482a74970cdcf6f7072c8d2471e1babe17a222dc/kiwisolver-1.4.8-cp313-cp313t-musllinux_1_2_x86_64.whl", hash = "sha256:be4816dc51c8a471749d664161b434912eee82f2ea66bd7628bd14583a833e85", size = 2349213 },
+]
+
+[[package]]
+name = "m2cgen"
+version = "0.10.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "numpy" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/72/92/eb4176f0e71bcd988a9df54e7103987a232082e5b6ef14a12d56b1c3bddf/m2cgen-0.10.0.tar.gz", hash = "sha256:9adfc5c6e693b1bb2e757c379e14ff97c95d1a11f9f6536882ebd7e402d34aa8", size = 55796 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/0b/1f/d57169a8458481e0292b672f8939688b269109d5d559bb0fd1ef3276cd91/m2cgen-0.10.0-py3-none-any.whl", hash = "sha256:b9f3e85133e905a306b507139ea40e595eccf499a7f4842889773caea7b74beb", size = 92239 },
 ]
 
 [[package]]
